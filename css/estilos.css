@@ -10,8 +10,6 @@ html {
     /* Esta propiedad aplica el desplazamiento suave a toda la página */
     scroll-behavior: smooth
 }
-
-
 /* Estilos para el header */
 header {
     background-image: url('../img/fondoweb.png'); /* Coloca la URL correcta de la imagen */

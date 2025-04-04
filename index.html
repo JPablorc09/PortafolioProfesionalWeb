@@ -1,203 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Profesional</title>
-     <!-- Favicon para el sitio web -->
-     <link rel="icon" type="image/png" href="./img/tecnologiaicono.png" sizes="64x64">
-     
-    <link rel="stylesheet" href="css/estilos.css">
-
+    <meta charset="UTF-8"> <!-- Definir la codificación de caracteres para caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hacer que el diseño sea responsivo en dispositivos móviles -->
+    <title>Portafolio Profesional</title> <!-- Título de la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="./img/tecnologiaicono.png" sizes="64x64"> <!-- Favicon del sitio web -->
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Enlace al archivo CSS para estilos -->
+    
+    <!-- Integración de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
- <!-- Header -->
-<header>
-    <div class="header-container">
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li><a href="#cv">Curriculum</a></li>
-            </ul>
-        </nav>
-        <h1>Mi Portafolio</h1>
-    </div>
-</header>
-    <!-- Contenido principal -->
+
+    <!-- Header (Menú de navegación) -->
+    <header>
+        <div class="header-container"> <!-- Contenedor principal del header -->
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre Mí</a></li> <!-- Enlace al área "Sobre Mí" -->
+                    <li><a href="#projects">Proyectos</a></li> <!-- Enlace al área "Proyectos" -->
+                    <li><a href="#skills">Habilidades</a></li> <!-- Enlace al área "Habilidades" -->
+                    <li><a href="#contact">Contacto</a></li> <!-- Enlace al área "Contacto" -->
+                    <li><a href="#cv">Curriculum</a></li> <!-- Enlace al área "Curriculum" -->
+                </ul>
+            </nav>
+            <h1>Mi Portafolio</h1> <!-- Título principal del portafolio -->
+        </div>
+    </header>
+
+    <!-- Sección de Banner con fondo -->
+    <section id="banner" class="full-screen-background"> <!-- Sección con imagen de fondo que ocupa toda la pantalla -->
+        <div class="banner-content"> <!-- Contenedor de contenido dentro del banner -->
+            <h2>Bienvenido a mi Portafolio</h2> <!-- Título de bienvenida -->
+            <p>Desarrollador Web y Apasionado por la Tecnología</p> <!-- Descripción adicional -->
+        </div>
+    </section>
+
+    <!-- Contenido principal: Sección "Sobre mí" -->
     <section id="about">
-        <h2>Sobre mí</h2>
-        <p>¡Hola! Soy un apasionado del desarrollo web y la tecnología. Me encanta crear experiencias digitales que no solo sean funcionales, sino también atractivas y fáciles de usar. Desde que comencé a explorar el mundo del código, he estado comprometido con el aprendizaje constante y la creación de soluciones innovadoras.</p>
-        <p>Mi enfoque principal es el desarrollo web, donde disfruto trabajar con tecnologías modernas para construir sitios web y aplicaciones dinámicas. Además, me apasiona crear sistemas para escritorios que ayuden a mejorar la productividad y eficiencia de los usuarios.</p>
-        <p>Me considero una persona curiosa y siempre busco la mejor forma de solucionar problemas mediante la tecnología. Creo en el poder de la colaboración y en la importancia de seguir mejorando para ofrecer lo mejor en cada proyecto.</p>
-    </section>
-    <!-- Contenido de proyectos -->
-<section id="projects">
-    <h2>Mis Proyectos</h2>
-    <div class="projects-container">
-
-        <!-- Proyecto 1 -->
-        <div class="project-card">
-            <img src="img/Alojamiento.png" alt="Sistema de Alojamiento">
-            <img src="img/loginAlojamiento.png" alt="Sistema de Alojamiento">
-            <div class="project-info">
-                <h3>Sistema sencillo de Alojamiento para cabañas</h3>
-                <p>Permite hacer reservaciones según el tipo de cabaña. Utilicé C# y SQL Server.</p>
-                <a href="https://github.com/JPablorc09/SistemaAlojamiento" class="btn">Ver Proyecto</a>
-            </div>
-        </div>
-
-        <!-- Proyecto 2 con video -->
-        <div class="project-card">
-            <!--<iframe width="100%" height="200" src="" frameborder="0" allowfullscreen></iframe>-->
-            <img src="img/sistemaVentas.png" alt="muestra una cartura del sistema de ventas">
-            <div class="project-info">
-                <h3>Sistema de Ventas</h3>
-                <p>Permite realizar ventas con gestión de productos, clientes, proveedores, entre otras funcionalidades... Esta en desarrollo aun este sistema.Utilicé C# y SQL Server.</p>
-                <a href="#" class="btn">Ver Proyecto</a>
-            </div>
-        </div>
-
-        <!-- Proyecto 3 -->
-        <div class="project-card">
-            <iframe width="100%" height="200" src="videos/videopaginaRestaurante.mp4" frameborder="0" allowfullscreen></iframe>
-            <img src="imagenes/proyecto3.jpg" alt="Página Web Estática">
-            <div class="project-info">
-                <h3>Página Web Estática</h3>
-                <p>Diseño informativo para una cafetería. Utilicé HTML5, CSS3 y JavaScript.</p>
-                <a href="https://github.com/JPablorc09/PaginaCafeteria" class="btn">Ver Proyecto</a>
-            </div>
-        </div>
-          <!-- Proyecto 4 -->
-    <div class="project-card">
-        <iframe width="100%" height="200" src="videos/paginablogResponsivo.mp4" frameborder="0" allowfullscreen></iframe>
-        <div class="project-info">
-            <h3>Página Blog</h3>
-            <p>Blog sencillo aplicando estructura,diseño y modelo responsivo . Utilicé HTML5, CSS3</p>
-            <a href="https://github.com/JPablorc09/PaginaBlog" class="btn">Ver Proyecto</a>
-        </div>
-    </div>
-    <!--Agregar aqui mas proyectos-->
-</div>
-    </div>
-</section>
-    
-<!--Contenido de Habilidades-->
-    <section id="skills">
-        <h2>Habilidades Técnicas</h2>
-        <div class="skills-container">
-            <!-- Lenguajes de Programación -->
-            <div class="skill-card">
-                <h3>Lenguajes de Programación</h3>
-                <ul>
-                    <li>C#</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>c++</li>
-                </ul>
-            </div>
-    
-            <!-- Bases de Datos -->
-            <div class="skill-card">
-                <h3>Bases de Datos</h3>
-                <ul>
-                    <li>SQL Server</li>
-                    <li>MySQL</li>
-                    <li>MariaDB</li>
-                </ul>
-            </div>
-    
-            <!-- Herramientas y Frameworks -->
-            <div class="skill-card">
-                <h3>Herramientas y Frameworks</h3>
-                <ul>
-                    <li>Visual Studio 2022</li>
-                    <li>Visual Studio Code</li>
-                    <li>Git & GitHub</li>
-                    <li>Net Beans</li>
-                </ul>
-            </div>
-    
-            <!-- Desarrollo Web -->
-            <div class="skill-card">
-                <h3>Desarrollo Web</h3>
-                <ul>
-                    <li>Frontend: HTML5, CSS3, JavaScript, Bootstrap 5</li>
-                    <li>Backend: Typescript</li>
-                </ul>
-            </div>
-    
-            <!-- Metodologías y Herramientas de Gestión -->
-            <div class="skill-card">
-                <h3>Metodologías y Herramientas de Gestión</h3>
-                <ul>
-                    <!--<li>Metodología Ágil (Scrum, Kanban)</li>
-                    <li>Gestión de Proyectos (Jira, Trello)</li>-->
-                    <li>Control de Versiones (Git, GitHub)</li>
-                </ul>
-            </div>
-    
-            <!-- Seguridad y Redes -->
-            <div class="skill-card">
-                <h3>Seguridad y Redes</h3>
-                <ul>
-                    <li>Configuración de Redes TCP/IP</li>
-                </ul>
-            </div>
+        <h2>Sobre mí</h2> <!-- Título de la sección -->
+        <div class="about-content">
+            <p>¡Hola! Soy un apasionado del desarrollo web y la tecnología. Me encanta crear experiencias digitales que no solo sean funcionales, sino también atractivas y fáciles de usar. Desde que comencé a explorar el mundo del código, he estado comprometido con el aprendizaje constante y la creación de soluciones innovadoras.</p>
+            
+            <p>Mi enfoque principal es el desarrollo web, donde disfruto trabajar con tecnologías modernas para construir sitios web y aplicaciones dinámicas. Además, me apasiona crear sistemas para escritorios que ayuden a mejorar la productividad y eficiencia de los usuarios.</p>
+            
+            <p>Me considero una persona curiosa y siempre busco la mejor forma de solucionar problemas mediante la tecnología. Creo en el poder de la colaboración y en la importancia de seguir mejorando para ofrecer lo mejor en cada proyecto.</p>
         </div>
     </section>
-    
-<!--Contenido contacto-->
-    <section id="contact">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p>Ponte en contacto con el siguiente formulario.</p>
-            <form action="https://formspree.io/f/mnnpgbbg" method="POST">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-    
-                <button type="submit">Enviar</button>
-            </form>
-    
-            <div class="social-media">
-                <h3>Redes Sociales</h3>
-                <a href="https://www.facebook.com/profile.php?id=100092845128090" target="_blank">Facebook</a>
-                <a href="https://www.linkedin.com/in/juan-pablo-rojas-contreras-15ab09345/" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contenido Curriculum -->
-<section id="cv">
-    <div class="cv-container">
-      <h2>Mi Currículum</h2>
-      
-      <div class="cv-preview">
-        <embed src="cv/JuanPabloRojasCCV.pdf" type="application/pdf" width="100%" height="600px">
-      </div>
-      
-      <div class="cv-actions">
-        <a href="cv/JuanPabloRojasCCV.pdf" class="download-btn" download>Descargar mi CV</a>
-        <button id="togglePreview" class="toggle-preview-btn">Ver/ocultar Previsualización</button>
-      </div>
-    </div>
-  </section>
 
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2025 Ing. Juan. Todos los derechos reservados.</p>
+    <!-- Pie de página -->
+    <footer> <!-- Pie de página -->
+        <div class="footer-container"> <!-- Contenedor del pie de página -->
+            <p>&copy; 2025 Ing. Juan. Todos los derechos reservados.</p> <!-- Mensaje de derechos de autor -->
         </div>
     </footer>
-<script src="javascript/cv.js"></script>
-</body>
 
+    <script src="javascript/cv.js"></script> <!-- Script JavaScript para funcionalidades adicionales -->
+</body>
 </html>
+

@@ -131,3 +131,60 @@ h2 {
     margin-bottom: 20px; /* Espaciado inferior */
     color: #00bcd4; /* Color de los títulos */
 }
+/* Estilo del pie de página */
+footer {
+    background-color: #1d1d1d; /* Fondo oscuro para el pie de página */
+    color: #bbb; /* Color gris claro para el texto */
+    padding: 40px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    position: relative; /* Asegura que el pie de página se ubique al final */
+    bottom: 0; /* Fijar el pie al final de la página */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+/* Estilo para los enlaces dentro del footer */
+footer a {
+    color: #00bcd4; /* Color azul para los enlaces */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Negrita para los enlaces */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+footer a:hover {
+    color: #0097a7; /* Cambio de color en hover */
+}
+
+/* Estilo para el contenedor del pie de página */
+.footer-container {
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    display: flex; /* Usar flexbox para organizar los elementos */
+    flex-direction: column; /* Organizar los elementos en columna */
+    justify-content: center; /* Centrar los elementos */
+    align-items: center; /* Centrar los elementos */
+}
+
+/* Estilo para el texto de derechos de autor */
+footer p {
+    font-size: 1.1rem; /* Tamaño más grande para los derechos de autor */
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para los iconos de redes sociales */
+.footer-social-icons {
+    display: flex; /* Disposición en línea de los iconos */
+    justify-content: center; /* Centrar los iconos */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.footer-social-icons a {
+    margin: 0 15px; /* Espaciado entre los iconos */
+    font-size: 1.5rem; /* Tamaño de los iconos */
+    color: #bbb; /* Color gris claro por defecto */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.footer-social-icons a:hover {
+    color: #00bcd4; /* Color azul cuando se pasa el ratón por encima */
+}

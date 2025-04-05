@@ -47,6 +47,178 @@
         </div>
     </section>
 
+    <!-- Sección que contiene los proyectos -->
+    <section id="projects">
+        <h2>Mis Proyectos</h2>
+
+        <!-- Contenedor para los botones de filtro de proyectos -->
+        <div class="project-filters">
+            <button class="filter-btn active" data-category="all">Todos</button>
+            <button class="filter-btn" data-category="web">Proyectos Web</button>
+            <button class="filter-btn" data-category="desktop">Programas de Escritorio</button>
+        </div>
+
+        <!-- Contenedor principal donde se muestran las tarjetas de los proyectos -->
+        <div class="projects-container">
+            <!-- Tarjeta del primer proyecto web -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <iframe width="100%" height="300" src="videos/videopaginaRestaurante.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="project-info">
+                    <h3>Página Web Estática</h3>
+                    <p>Diseño informativo para una cafetería.</p>
+                    <p><strong>Herramientas:</strong> HTML5, CSS3, JavaScript</p>
+                    <a href="https://github.com/JPablorc09/PaginaCafeteria" class="btn">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta del segundo proyecto web -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <iframe width="100%" height="300" src="videos/paginablogResponsivo.mp4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="project-info">
+                    <h3>Página Blog</h3>
+                    <p>Blog sencillo aplicando estructura, diseño y modelo responsivo.</p>
+                    <p><strong>Herramientas:</strong> HTML5, CSS3</p>
+                    <a href="https://github.com/JPablorc09/PaginaBlog" class="btn">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta del primer proyecto de escritorio -->
+            <div class="project-card" data-category="desktop">
+                <div class="project-image">
+                    <img src="img/Alojamiento.png" alt="Sistema de Alojamiento">
+                </div>
+                <div class="project-info">
+                    <h3>Sistema de Alojamiento para cabañas</h3>
+                    <p>Permite hacer reservaciones según el tipo de cabaña.</p>
+                    <p><strong>Herramientas:</strong> C#, SQL Server</p>
+                    <a href="https://github.com/JPablorc09/SistemaAlojamiento" class="btn">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta del segundo proyecto de escritorio -->
+            <div class="project-card" data-category="desktop">
+                <div class="project-image">
+                    <img src="img/sistemaVentas.png" alt="Sistema de Ventas">
+                </div>
+                <div class="project-info">
+                    <h3>Sistema de Ventas</h3>
+                    <p>Gestión de ventas, productos, clientes y proveedores, entre otras funcionalidades.Se encuentra en desarrollo aun.</p>
+                    <p><strong>Herramientas:</strong> C#, SQL Server</p>
+                    <a href="#" class="btn">Ver Proyecto</a>
+                </div>
+            </div>
+            <!--agregar mas proyectos aqui-->
+        </div>
+    </section>
+<!--Contenido de Habilidades-->
+<section id="skills">
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills-container">
+        <!-- Lenguajes de Programación -->
+        <div class="skill-card">
+            <h3><i class="fab fa-csharp"></i> Lenguajes de Programación</h3>
+            <ul>
+                <li><i class="fab fa-csharp"></i> C#</li>
+                <li><i class="fab fa-java"></i> Java</li>
+                <li><i class="fab fa-js-square"></i> JavaScript</li>
+                <li><i class="fab fa-cuttlefish"></i> C++</li>
+            </ul>
+        </div>
+
+        <!-- Bases de Datos -->
+        <div class="skill-card">
+            <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+            <ul>
+                <li><i class="fas fa-database"></i> SQL Server</li>
+                <li><i class="fas fa-database"></i> MySQL</li>
+                <li><i class="fas fa-database"></i> MariaDB</li>
+            </ul>
+        </div>
+
+        <!-- Herramientas y Frameworks -->
+        <div class="skill-card">
+            <h3><i class="fas fa-tools"></i> Herramientas y Frameworks</h3>
+            <ul>
+                <li><i class="fas fa-code"></i> Visual Studio 2022</li>
+                <li><i class="fas fa-code"></i> Visual Studio Code</li>
+                <li><i class="fab fa-github"></i> Git & GitHub</li>
+                <li><i class="fas fa-cogs"></i> Net Beans</li>
+            </ul>
+        </div>
+
+        <!-- Desarrollo Web -->
+        <div class="skill-card">
+            <h3><i class="fab fa-html5"></i> Desarrollo Web</h3>
+            <ul>
+                <li><i class="fab fa-html5"></i> Frontend: HTML5, CSS3, JavaScript, Bootstrap 5</li>
+                <li><i class="fab fa-node"></i> Backend: Typescript</li>
+            </ul>
+        </div>
+
+        <!-- Metodologías y Herramientas de Gestión -->
+        <div class="skill-card">
+            <h3><i class="fas fa-project-diagram"></i> Metodologías y Herramientas de Gestión</h3>
+            <ul>
+                <li><i class="fab fa-trello"></i> Control de Versiones (Git, GitHub)</li>
+            </ul>
+        </div>
+
+        <!-- Seguridad y Redes -->
+        <div class="skill-card">
+            <h3><i class="fas fa-network-wired"></i> Seguridad y Redes</h3>
+            <ul>
+                <li><i class="fas fa-network-wired"></i> Configuración de Redes TCP/IP</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--Contenido contacto-->
+<section id="contact">
+    <div class="container">
+        <h2>Contacto</h2>
+        <p>Ponte en contacto con el siguiente formulario.</p>
+        
+        <!-- Formulario -->
+        <form action="https://formspree.io/f/mnnpgbbg" method="POST">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+</section>
+
+<!-- Contenido Curriculum -->
+<section id="cv">
+    <div class="cv-container">
+        <h2>Mi Currículum</h2>
+
+        <div class="cv-preview">
+            <embed src="cv/JuanPabloRojasCCV.pdf" type="application/pdf" width="100%" height="600px">
+        </div>
+
+        <div class="cv-actions">
+            <a href="cv/JuanPabloRojasCCV.pdf" class="download-btn" download>
+                <i class="fas fa-download"></i> Descargar mi CV
+            </a>
+            <button id="togglePreview" class="toggle-preview-btn">
+                <i class="fas fa-eye"></i> Ver/ocultar Previsualización
+            </button>
+        </div>
+    </div>
+</section>
+
+
     <!-- Pie de página -->
     <footer>
         <div class="footer-container">
@@ -55,15 +227,13 @@
                 <a href="https://www.linkedin.com/in/juan-pablo-rojas-contreras-15ab09345/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/JPablorc09" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100092845128090" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-
             </div>
         </div>
     </footer>
-    
-    <!-- Agregar link a Font Awesome para los iconos (si no los tienes ya) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 
+    <!-- Agregar link a Font Awesome para los iconos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     <script src="javascript/cv.js"></script> <!-- Script JavaScript para funcionalidades adicionales -->
+    <script src="javascript/proyectosCategoria.js"></script> <!-- Script JavaScript para funcionalidades adicionales -->
 </body>
 </html>
-

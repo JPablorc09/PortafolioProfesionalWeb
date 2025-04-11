@@ -47,73 +47,88 @@
         </div>
     </section>
 
-    <!-- Sección que contiene los proyectos -->
-    <section id="projects">
-        <h2>Mis Proyectos</h2>
+   <!-- Sección que contiene los proyectos -->
+<section id="projects">
+    <h2>Mis Proyectos</h2>
 
-        <!-- Contenedor para los botones de filtro de proyectos -->
-        <div class="project-filters">
-            <button class="filter-btn active" data-category="all">Todos</button>
-            <button class="filter-btn" data-category="web">Proyectos Web</button>
-            <button class="filter-btn" data-category="desktop">Programas de Escritorio</button>
+    <!-- Contenedor para los botones de filtro de proyectos -->
+    <div class="project-filters">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="web">Proyectos Web</button>
+        <button class="filter-btn" data-category="desktop">Programas de Escritorio</button>
+    </div>
+
+    <!-- Contenedor principal donde se muestran las tarjetas de los proyectos -->
+    <div class="projects-container">
+        <!-- Tarjeta del primer proyecto web -->
+        <div class="project-card" data-category="web">
+            <div class="project-image">
+                <iframe width="100%" height="300" src="videos/videopaginaRestaurante.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="project-info">
+                <h3>Página Web Estática</h3>
+                <p>Diseño informativo para una cafetería.</p>
+                <p><strong>Herramientas:</strong> HTML5, CSS3, JavaScript</p>
+                <a href="https://github.com/JPablorc09/PaginaCafeteria" class="btn">Ver Proyecto</a>
+            </div>
         </div>
 
-        <!-- Contenedor principal donde se muestran las tarjetas de los proyectos -->
-        <div class="projects-container">
-            <!-- Tarjeta del primer proyecto web -->
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <iframe width="100%" height="300" src="videos/videopaginaRestaurante.mp4" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="project-info">
-                    <h3>Página Web Estática</h3>
-                    <p>Diseño informativo para una cafetería.</p>
-                    <p><strong>Herramientas:</strong> HTML5, CSS3, JavaScript</p>
-                    <a href="https://github.com/JPablorc09/PaginaCafeteria" class="btn">Ver Proyecto</a>
-                </div>
+        <!-- Tarjeta del segundo proyecto web -->
+        <div class="project-card" data-category="web">
+            <div class="project-image">
+                <iframe width="100%" height="300" src="videos/paginablogResponsivo.mp4" frameborder="0" allowfullscreen></iframe>
             </div>
-
-            <!-- Tarjeta del segundo proyecto web -->
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <iframe width="100%" height="300" src="videos/paginablogResponsivo.mp4" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="project-info">
-                    <h3>Página Blog</h3>
-                    <p>Blog sencillo aplicando estructura, diseño y modelo responsivo.</p>
-                    <p><strong>Herramientas:</strong> HTML5, CSS3</p>
-                    <a href="https://github.com/JPablorc09/PaginaBlog" class="btn">Ver Proyecto</a>
-                </div>
+            <div class="project-info">
+                <h3>Página Blog</h3>
+                <p>Blog sencillo aplicando estructura, diseño y modelo responsivo.</p>
+                <p><strong>Herramientas:</strong> HTML5, CSS3</p>
+                <a href="https://github.com/JPablorc09/PaginaBlog" class="btn">Ver Proyecto</a>
             </div>
-
-            <!-- Tarjeta del primer proyecto de escritorio -->
-            <div class="project-card" data-category="desktop">
-                <div class="project-image">
-                    <img src="img/Alojamiento.png" alt="Sistema de Alojamiento">
-                </div>
-                <div class="project-info">
-                    <h3>Sistema de Alojamiento para cabañas</h3>
-                    <p>Permite hacer reservaciones según el tipo de cabaña.</p>
-                    <p><strong>Herramientas:</strong> C#, SQL Server</p>
-                    <a href="https://github.com/JPablorc09/SistemaAlojamiento" class="btn">Ver Proyecto</a>
-                </div>
-            </div>
-
-            <!-- Tarjeta del segundo proyecto de escritorio -->
-            <div class="project-card" data-category="desktop">
-                <div class="project-image">
-                    <img src="img/sistemaVentas.png" alt="Sistema de Ventas">
-                </div>
-                <div class="project-info">
-                    <h3>Sistema de Ventas</h3>
-                    <p>Gestión de ventas, productos, clientes y proveedores, entre otras funcionalidades.Se encuentra en desarrollo aun.</p>
-                    <p><strong>Herramientas:</strong> C#, SQL Server</p>
-                    <a href="#" class="btn">Ver Proyecto</a>
-                </div>
-            </div>
-            <!--agregar mas proyectos aqui-->
         </div>
-    </section>
+
+        <!-- NUEVO Proyecto Web -->
+        <div class="project-card" data-category="web">
+            <div class="project-image">
+               <img src="img/PaginaManicurista.png" alt="">
+            </div>
+            <div class="project-info">
+                <h3>Pagina Manicursita</h3>
+                <p>Se crea una pagina para una clienta sobre la profesion manicurista y cuenta con chat para que se mayor faciladad de que sus clientas y nuevas clientas puedan reservar una cita o bien preguntar por sus trabajos</p>
+                <p><strong>Herramientas:</strong> HTML5, CSS3, JavaScript</p>
+                <a href="https://paginamanicurista.netlify.app/" class="btn">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta del primer proyecto de escritorio -->
+        <div class="project-card" data-category="desktop">
+            <div class="project-image">
+                <img src="img/Alojamiento.png" alt="Sistema de Alojamiento">
+            </div>
+            <div class="project-info">
+                <h3>Sistema de Alojamiento para cabañas</h3>
+                <p>Permite hacer reservaciones según el tipo de cabaña.</p>
+                <p><strong>Herramientas:</strong> C#, SQL Server</p>
+                <a href="https://github.com/JPablorc09/SistemaAlojamiento" class="btn">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <!-- Tarjeta del segundo proyecto de escritorio -->
+        <div class="project-card" data-category="desktop">
+            <div class="project-image">
+                <img src="img/sistemaVentas.png" alt="Sistema de Ventas">
+            </div>
+            <div class="project-info">
+                <h3>Sistema de Ventas</h3>
+                <p>Gestión de ventas, productos, clientes y proveedores, entre otras funcionalidades. Se encuentra en desarrollo aún.</p>
+                <p><strong>Herramientas:</strong> C#, SQL Server</p>
+                <a href="#" class="btn">Ver Proyecto</a>
+            </div>
+        </div>
+        
+        <!-- Puedes agregar más proyectos aquí -->
+    </div>
+</section>
+
 <!--Contenido de Habilidades-->
 <section id="skills">
     <h2>Habilidades Técnicas</h2>

@@ -201,12 +201,28 @@ h2 {
 
 /* Ajuste de video para proyectos web */
 .project-image iframe {
-    width: 100%;
+    width: 50%;
     height: 100%;
     object-fit: cover;
 }
 
 /* Estilo de los videos cuando se está mostrando 'Proyectos Web' */
+/* Ajustes generales para las imágenes de los proyectos */
+.project-image img {
+    width: 100%;  /* Asegura que la imagen siempre ocupe el 100% del contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
+    object-fit: contain;  /* Ajusta la imagen dentro del contenedor sin deformarla */
+}
+
+/* Estilo de las imágenes para proyectos de escritorio */
+.project-card[data-category="desktop"] .project-image img {
+    max-width: 100%;  /* Asegura que la imagen no se desborde */
+    height: auto;  /* Mantiene la proporción original */
+    object-fit: contain; /* Hace que la imagen se ajuste sin perder la proporción */
+}
+
+/* Ajuste de video para proyectos web */
 .project-card[data-category="web"] .project-image iframe {
     width: 100%; /* El video abarca el 100% del contenedor */
     height: 100%; /* El video ocupa toda la altura del contenedor */
@@ -214,26 +230,29 @@ h2 {
     border: none; /* Elimina el borde predeterminado del iframe */
 }
 
+/* Estilo de las imágenes para programas de escritorio */
+.project-card[data-category="desktop"] .project-image img {
+    max-width: 100%;
+    height: auto; /* Las imágenes se ajustan según el ancho */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin deformarla */
+}
+
 /* Asegúrate de que el contenedor de la imagen tenga altura correcta */
 .project-card[data-category="web"] .project-image {
-    position: relative; /* Necesario para que el video se posicione correctamente */
+    position: relative;
     width: 100%;
-    height: 300px; /* Puedes ajustar este valor según el tamaño que desees para los videos */
+    height: 300px; /* Ajusta el valor según el tamaño que desees para los videos */
     overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
 }
 
-/* Estilo de las imágenes para programas de escritorio */
-.project-card[data-category="desktop"] .project-image img {
+/* Ajusta el contenedor de imagen para los proyectos de escritorio */
+.project-card[data-category="desktop"] .project-image {
+    position: relative;
     width: 100%;
-    height: auto;  /* Las imágenes se ajustan según el ancho */
-    object-fit: cover; /* Esto asegura que la imagen cubra bien el contenedor */
+    height: auto;  /* Cambia la altura para permitir que se ajuste con el contenido */
+    min-height: 200px; /* Puedes ajustar esto para que la imagen no se vea demasiado pequeña */
+    overflow: hidden;
 }
-
-/* Estilo de los videos para programas de escritorio */
-.project-card[data-category="desktop"] .project-image iframe {
-    display: none; /* Ocultar video si está en la categoría 'desktop' */
-}
-
 
 /* Información del Proyecto */
 .project-info {
